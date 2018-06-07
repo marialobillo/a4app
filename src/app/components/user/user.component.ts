@@ -10,17 +10,20 @@ export class UserComponent implements OnInit {
 	age:number;
 	email:string;
 	address:Address;
+	hobbies:string[];
 
 	constructor() { }
 
 	ngOnInit() {
 		this.name = 'John Doe';
 		this.age = 30;
+		this.email = 'hello@mail.com';
 		this.address = {
 			street: '50 Main Street',
 			city: 'Boston',
 			state: 'MA'
 		}
+		this.hobbies = ['Write Code', 'Watching movies', 'Listen to Music'];
 	}
 
 }
