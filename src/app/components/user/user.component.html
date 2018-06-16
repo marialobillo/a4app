@@ -11,3 +11,31 @@
 </li>
 </ul>
 <button (click)="onClick()" name="button">Click Me</button>
+
+<h1>Edit User</h1>
+<form>
+	<div>
+		<label for="name">Name</label> <br>
+		<input type="text" [(ngModel)]="name" name="name" />
+	</div>
+	<div>
+		<label for="email">Email</label> <br>
+		<input type="text" [(ngModel)]="email" name="email" />
+	</div>
+	<div>
+		<label for="age">Age</label> <br>
+		<input type="number" [(ngModel)]="age" name="age" />
+	</div>
+	<div>
+		<label for="street">Street</label> <br>
+		<input type="text" [(ngModel)]="address.street" name="street"/>
+	</div>
+	<div>
+		<label for="city">City</label> <br>
+		<input type="text" [(ngModel)]="address.city" name="city"/>
+	</div>
+	<div>
+		<label for="state">State</label> <br>
+		<input type="text" [(ngModel)]="address.state" name="state" />
+	</div>
+</form>
