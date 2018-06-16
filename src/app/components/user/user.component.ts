@@ -38,6 +38,9 @@ export class UserComponent implements OnInit {
 		return false;
 	}
 
+	deleteHobby(hobby){
+		console.log(hobby);
+	}
 }
 
 interface Address{

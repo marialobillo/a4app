@@ -7,5 +7,6 @@
 <h1>Hobbies</h1>
 <ul>
 	<li *ngFor="let hobby of hobbies">{{hobby}}</li>
+	{{i + 1}}: {{hobby}}<button (click)="deleteHobby(hobby)" >X</buton>
 </ul>
 <button (click)="onClick()" name="button">Click Me</button>
